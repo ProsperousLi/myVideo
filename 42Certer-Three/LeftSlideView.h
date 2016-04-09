@@ -1,5 +1,5 @@
 //
-//  TabViewController.h
+//  LeftSlideView.h
 //  42Certer-Three
 //
 //  Created by dragon on 16/4/9.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TabViewController : UIViewController
+@interface LeftSlideView : UIView
 
 @end

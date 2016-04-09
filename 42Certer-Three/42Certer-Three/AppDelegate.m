@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "VideoPlayerViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,20 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    VideoPlayerViewController * PlayerViewController = [[VideoPlayerViewController alloc] init];
 
-    //获取storyboard的ID
-    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    //由storyboard根据myView的storyBoardID来获取我们要切换的视图
-    UIViewController *myView = [story instantiateViewControllerWithIdentifier:@"tabBarController"];
-    
-    self.deckController = [[IIViewDeckController alloc] initWithCenterViewController:myView leftViewController:PlayerViewController rightViewController:nil];
-
-    
-    self.window.rootViewController = self.deckController;
-    
-    //self.window.rootViewController = TabViewController;
     
     return YES;
 }

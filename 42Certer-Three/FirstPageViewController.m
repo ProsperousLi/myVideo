@@ -18,10 +18,6 @@
     [self customButtonsAddWithDelete:nil showNumberButtonsInOneLine:PageNumber];
     [self imageviewForscrollView:nil imageViewNumber:PageNumber];
     [self.view addSubview:pageView];
-    
-    //[_deckController addChildViewController:self];
-    
-    
 }
 
 

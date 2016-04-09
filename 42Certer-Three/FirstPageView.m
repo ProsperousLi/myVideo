@@ -16,6 +16,7 @@
         self.frame = frame;
         self.backgroundColor = [UIColor whiteColor];
         [self addSubview:self.verticalScrollView];
+        _moreView.hidden = YES;
 
         
     }
@@ -147,15 +148,15 @@
 #pragma mark 更多按钮响应事件
 -(void)moreButtonAction:(id)sender {
     static int index = 0;
-    NSLog(@"moreButton is click!!");
+    //NSLog(@"moreButton is click!!");
 
     if (index == 0) {
-        _moreView.hidden = YES;
+        _moreView.hidden = NO;
         [_moreButton setImage:[UIImage imageNamed:@"SelectMore.png"] forState:UIControlStateNormal];
         index = 1;
     }
     else if (index == 1) {
-        _moreView.hidden = NO;
+        _moreView.hidden = YES;
         [_moreButton setImage:[UIImage imageNamed:@"NormalMore.png"] forState:UIControlStateNormal];
         index = 0;
     }

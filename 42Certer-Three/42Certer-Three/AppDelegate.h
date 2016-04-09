@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
-#import <ViewDeck/ViewDeck.h>
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -22,7 +22,7 @@
 - (NSURL *)applicationDocumentsDirectory;
 
 
-@property (strong, nonatomic) IIViewDeckController *deckController;
+
 
 @end
 

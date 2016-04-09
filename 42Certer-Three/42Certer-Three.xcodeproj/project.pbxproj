@@ -13,7 +13,6 @@
 		69BAEECD1C98F3CD00B0E091 /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BAEECC1C98F3CD00B0E091 /* VideoPlayerViewController.m */; };
 		69BAEED31C99027600B0E091 /* VideoPlayeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BAEED21C99027600B0E091 /* VideoPlayeView.m */; };
 		D819537E1CB8EAD500373E83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D819537D1CB8EAD500373E83 /* Main.storyboard */; };
-		D81953811CB8ED6200373E83 /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D81953801CB8ED6200373E83 /* TabViewController.m */; };
 		D8368AA81C14298100C4E399 /* SearchContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8368AA71C14298100C4E399 /* SearchContentViewController.m */; };
 		D8368AAB1C142B1700C4E399 /* SearchContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8368AAA1C142B1700C4E399 /* SearchContentView.m */; };
 		D85891001C1C165D0059AE8A /* ContentCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D85890FF1C1C165D0059AE8A /* ContentCollectionView.m */; };
@@ -67,6 +66,8 @@
 		D8B691121C0AED0600CD3A2C /* bnt_search_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B6910D1C0AED0600CD3A2C /* bnt_search_selected.png */; };
 		D8B691131C0AED0600CD3A2C /* home_select.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B6910E1C0AED0600CD3A2C /* home_select.png */; };
 		D8B6911A1C0AEF0700CD3A2C /* backage_ground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8B691191C0AEF0700CD3A2C /* backage_ground.jpg */; };
+		D8CB71831CB90C7400EAE192 /* LeftSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CB71821CB90C7400EAE192 /* LeftSlideView.m */; };
+		D8CB71861CB90C9F00EAE192 /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CB71851CB90C9F00EAE192 /* LeftSlideViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,8 +96,6 @@
 		69BAEED11C99027600B0E091 /* VideoPlayeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayeView.h; sourceTree = "<group>"; };
 		69BAEED21C99027600B0E091 /* VideoPlayeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayeView.m; sourceTree = "<group>"; };
 		D819537D1CB8EAD500373E83 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		D819537F1CB8ED6200373E83 /* TabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
-		D81953801CB8ED6200373E83 /* TabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
 		D8368AA61C14298100C4E399 /* SearchContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchContentViewController.h; sourceTree = "<group>"; };
 		D8368AA71C14298100C4E399 /* SearchContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchContentViewController.m; sourceTree = "<group>"; };
 		D8368AA91C142B1700C4E399 /* SearchContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchContentView.h; sourceTree = "<group>"; };
@@ -172,6 +171,10 @@
 		D8B6910D1C0AED0600CD3A2C /* bnt_search_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bnt_search_selected.png; sourceTree = "<group>"; };
 		D8B6910E1C0AED0600CD3A2C /* home_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_select.png; sourceTree = "<group>"; };
 		D8B691191C0AEF0700CD3A2C /* backage_ground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backage_ground.jpg; sourceTree = "<group>"; };
+		D8CB71811CB90C7400EAE192 /* LeftSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideView.h; sourceTree = "<group>"; };
+		D8CB71821CB90C7400EAE192 /* LeftSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideView.m; sourceTree = "<group>"; };
+		D8CB71841CB90C9F00EAE192 /* LeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideViewController.h; sourceTree = "<group>"; };
+		D8CB71851CB90C9F00EAE192 /* LeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideViewController.m; sourceTree = "<group>"; };
 		E7F8CC73AB7CA33DE98E1191 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ED858EDD657CF5000B348F2D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -460,10 +463,7 @@
 		D8B690EA1C0AD23200CD3A2C /* Code-Source */ = {
 			isa = PBXGroup;
 			children = (
-				D819537F1CB8ED6200373E83 /* TabViewController.h */,
-				D81953801CB8ED6200373E83 /* TabViewController.m */,
 				69BAEECA1C98F37C00B0E091 /* Video-page */,
-				D8B691151C0AED7D00CD3A2C /* loading-page */,
 				D8B691141C0AED6500CD3A2C /* Welcome-page */,
 				D8B690EC1C0AD26000CD3A2C /* Frist-page */,
 				D8B690ED1C0AD27E00CD3A2C /* channel */,
@@ -519,6 +519,8 @@
 			children = (
 				D87EA11A1C1412CC00FBE2F5 /* FirstPageView.h */,
 				D87EA11B1C1412CC00FBE2F5 /* FirstPageView.m */,
+				D8CB71811CB90C7400EAE192 /* LeftSlideView.h */,
+				D8CB71821CB90C7400EAE192 /* LeftSlideView.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -583,23 +585,7 @@
 			name = "Welcome-page";
 			sourceTree = "<group>";
 		};
-		D8B691151C0AED7D00CD3A2C /* loading-page */ = {
-			isa = PBXGroup;
-			children = (
-				D8B691171C0AEDBE00CD3A2C /* view */,
-				D8B6911B1C0AEF4800CD3A2C /* Controller */,
-			);
-			name = "loading-page";
-			sourceTree = "<group>";
-		};
 		D8B691161C0AEDB800CD3A2C /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = view;
-			sourceTree = "<group>";
-		};
-		D8B691171C0AEDBE00CD3A2C /* view */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -612,13 +598,6 @@
 				D8B691191C0AEF0700CD3A2C /* backage_ground.jpg */,
 			);
 			name = background;
-			sourceTree = "<group>";
-		};
-		D8B6911B1C0AEF4800CD3A2C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Controller;
 			sourceTree = "<group>";
 		};
 		D8B6911C1C0AEF5300CD3A2C /* Controller */ = {
@@ -637,6 +616,8 @@
 			children = (
 				D87EA11D1C141E3000FBE2F5 /* FirstPageViewController.h */,
 				D87EA11E1C141E3000FBE2F5 /* FirstPageViewController.m */,
+				D8CB71841CB90C9F00EAE192 /* LeftSlideViewController.h */,
+				D8CB71851CB90C9F00EAE192 /* LeftSlideViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -877,13 +858,13 @@
 				D8841D801C12C54B0093C264 /* WelcomeViewController.m in Sources */,
 				D8846A0E1C9AA62A008234E8 /* KrVideoPlayerController.m in Sources */,
 				D87160F11C0AF76D00AF0BEA /* NetOperation.m in Sources */,
+				D8CB71861CB90C9F00EAE192 /* LeftSlideViewController.m in Sources */,
 				D87EA11F1C141E3000FBE2F5 /* FirstPageViewController.m in Sources */,
 				D87160DC1C0AF3B700AF0BEA /* LoginViewController.m in Sources */,
 				D87EA11C1C1412CC00FBE2F5 /* FirstPageView.m in Sources */,
 				69BAEED31C99027600B0E091 /* VideoPlayeView.m in Sources */,
 				D8841D911C12D9460093C264 /* WelcomePageData.m in Sources */,
 				D8841D841C12C79E0093C264 /* ImageViewController.m in Sources */,
-				D81953811CB8ED6200373E83 /* TabViewController.m in Sources */,
 				D8846A0F1C9AA62A008234E8 /* KrVideoPlayerControlView.m in Sources */,
 				D8368AAB1C142B1700C4E399 /* SearchContentView.m in Sources */,
 				D8846A101C9AA62A008234E8 /* READEME.md in Sources */,
@@ -894,6 +875,7 @@
 				D8B690B91C0AD21200CD3A2C /* AppDelegate.m in Sources */,
 				D892ED371C2195A5008E0F27 /* DataJson.m in Sources */,
 				D85891001C1C165D0059AE8A /* ContentCollectionView.m in Sources */,
+				D8CB71831CB90C7400EAE192 /* LeftSlideView.m in Sources */,
 				D8B690B61C0AD21200CD3A2C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
