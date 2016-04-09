@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '97F4EE2EF9A990ADF5C4AC0D'
-               BlueprintName = 'AFNetworking'
+               BlueprintIdentifier = 'F0434D1F065666D7B3218599'
+               BlueprintName = 'PullToRefresh'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libAFNetworking.a'>
+               BuildableName = 'libPullToRefresh.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -12,7 +12,8 @@
 		69BAEEC81C98F07B00B0E091 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69BAEEC71C98F07B00B0E091 /* AVFoundation.framework */; };
 		69BAEECD1C98F3CD00B0E091 /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BAEECC1C98F3CD00B0E091 /* VideoPlayerViewController.m */; };
 		69BAEED31C99027600B0E091 /* VideoPlayeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BAEED21C99027600B0E091 /* VideoPlayeView.m */; };
-		69BAEED51C990F2D00B0E091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69BAEED41C990F2D00B0E091 /* Main.storyboard */; };
+		D819537E1CB8EAD500373E83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D819537D1CB8EAD500373E83 /* Main.storyboard */; };
+		D81953811CB8ED6200373E83 /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D81953801CB8ED6200373E83 /* TabViewController.m */; };
 		D8368AA81C14298100C4E399 /* SearchContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8368AA71C14298100C4E399 /* SearchContentViewController.m */; };
 		D8368AAB1C142B1700C4E399 /* SearchContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8368AAA1C142B1700C4E399 /* SearchContentView.m */; };
 		D85891001C1C165D0059AE8A /* ContentCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D85890FF1C1C165D0059AE8A /* ContentCollectionView.m */; };
@@ -93,7 +94,9 @@
 		69BAEECC1C98F3CD00B0E091 /* VideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerViewController.m; sourceTree = "<group>"; };
 		69BAEED11C99027600B0E091 /* VideoPlayeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayeView.h; sourceTree = "<group>"; };
 		69BAEED21C99027600B0E091 /* VideoPlayeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayeView.m; sourceTree = "<group>"; };
-		69BAEED41C990F2D00B0E091 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D819537D1CB8EAD500373E83 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D819537F1CB8ED6200373E83 /* TabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
+		D81953801CB8ED6200373E83 /* TabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
 		D8368AA61C14298100C4E399 /* SearchContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchContentViewController.h; sourceTree = "<group>"; };
 		D8368AA71C14298100C4E399 /* SearchContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchContentViewController.m; sourceTree = "<group>"; };
 		D8368AA91C142B1700C4E399 /* SearchContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchContentView.h; sourceTree = "<group>"; };
@@ -375,8 +378,8 @@
 		D8A61A8C1C0F0E5A00B642CD /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
+				D819537D1CB8EAD500373E83 /* Main.storyboard */,
 				D8B690C51C0AD21200CD3A2C /* LaunchScreen.storyboard */,
-				69BAEED41C990F2D00B0E091 /* Main.storyboard */,
 			);
 			name = StoryBoards;
 			sourceTree = "<group>";
@@ -457,6 +460,8 @@
 		D8B690EA1C0AD23200CD3A2C /* Code-Source */ = {
 			isa = PBXGroup;
 			children = (
+				D819537F1CB8ED6200373E83 /* TabViewController.h */,
+				D81953801CB8ED6200373E83 /* TabViewController.m */,
 				69BAEECA1C98F37C00B0E091 /* Video-page */,
 				D8B691151C0AED7D00CD3A2C /* loading-page */,
 				D8B691141C0AED6500CD3A2C /* Welcome-page */,
@@ -764,12 +769,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8841D8B1C12D2800093C264 /* welcome3.jpg in Resources */,
-				69BAEED51C990F2D00B0E091 /* Main.storyboard in Resources */,
 				D8B2449C1C11749F00858071 /* anim_loading.gif in Resources */,
 				D8846A041C9AA62A008234E8 /* kr-video-player-fullscreen@2x.png in Resources */,
 				D8846A051C9AA62A008234E8 /* kr-video-player-fullscreen@3x.png in Resources */,
 				D8B6911A1C0AEF0700CD3A2C /* backage_ground.jpg in Resources */,
 				D8846A0D1C9AA62A008234E8 /* kr-video-player-shrinkscreen@3x.png in Resources */,
+				D819537E1CB8EAD500373E83 /* Main.storyboard in Resources */,
 				D8846A061C9AA62A008234E8 /* kr-video-player-pause@2x.png in Resources */,
 				D8841D891C12D2800093C264 /* welcome1.jpg in Resources */,
 				D8846A021C9AA62A008234E8 /* kr-video-player-close@2x.png in Resources */,
@@ -878,6 +883,7 @@
 				69BAEED31C99027600B0E091 /* VideoPlayeView.m in Sources */,
 				D8841D911C12D9460093C264 /* WelcomePageData.m in Sources */,
 				D8841D841C12C79E0093C264 /* ImageViewController.m in Sources */,
+				D81953811CB8ED6200373E83 /* TabViewController.m in Sources */,
 				D8846A0F1C9AA62A008234E8 /* KrVideoPlayerControlView.m in Sources */,
 				D8368AAB1C142B1700C4E399 /* SearchContentView.m in Sources */,
 				D8846A101C9AA62A008234E8 /* READEME.md in Sources */,

@@ -11,6 +11,7 @@
 #import "MyCATransition.h"
 #import "FirstPageView.h"
 #import "SearchContentViewController.h"
+
 @interface FirstPageViewController : SearchContentViewController
 {
     @private
@@ -25,6 +26,7 @@
 @property (nonatomic,retain) NSMutableArray *customButtonContents; //存储按钮的文字内容
 
 @property (nonatomic,strong) UITableView * tableView;
+
 
 
 @end

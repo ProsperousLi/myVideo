@@ -14,11 +14,17 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - PullToRefresh (0.0.1)
+  - ViewDeck (2.4.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - PullToRefresh (~> 0.0.1)
+  - ViewDeck (~> 2.4.2)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  PullToRefresh: 718b902fea1e8db4390bee24d515a37fd49bdbd7
+  ViewDeck: 0b7b83bc2782a20dfb76207d0a2e8c5e6a6d182d
 
 COCOAPODS: 0.39.0

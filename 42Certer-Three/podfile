@@ -1,2 +1,4 @@
 platform :ios, '8.0'
 pod 'AFNetworking', '~> 3.1.0'
+pod 'ViewDeck', '~> 2.4.2' 
+pod 'PullToRefresh', '~> 0.0.1'

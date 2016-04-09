@@ -19,7 +19,12 @@
     [self imageviewForscrollView:nil imageViewNumber:PageNumber];
     [self.view addSubview:pageView];
     
+    //[_deckController addChildViewController:self];
+    
+    
 }
+
+
 
 #pragma 按钮控件－－自定义喜欢的类型
 -(void)customButtonsAddWithDelete:(id)sender showNumberButtonsInOneLine:(int)number {
