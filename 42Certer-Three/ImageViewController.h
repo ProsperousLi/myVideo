@@ -11,6 +11,7 @@
 #import "AppConstant.h"
 #import <ViewDeck/ViewDeck.h>
 #import "LeftSlideViewController.h"
+#import "SlideLeftAndRightInit.h"
 
 @interface ImageViewController : UIViewController
 
@@ -23,7 +24,6 @@
 @property (nonatomic,strong) UIButton *StartButton;
 @property (nonatomic,strong) UIPageControl * pageControl;
 
-@property (strong, nonatomic) IIViewDeckController *deckController; //滑动视图控制器
-@property (nonatomic,strong) LeftSlideViewController * leftSlideViewController ; //左边视图
+
 
 @end

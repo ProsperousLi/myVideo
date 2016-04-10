@@ -56,9 +56,9 @@
 -(UIScrollView*)horizontaScrollView {
     if (!_horizontaScrollView) {
         //水平视图滚动horizontaScrollView
-        _horizontaScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, (ScreenHeight)/100, ScreenWidth, ScreenHeight/2)];
+        _horizontaScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, (ScreenHeight)/6, ScreenWidth, 2*ScreenHeight/7)];
         [_horizontaScrollView setDelegate:self];
-        _horizontaScrollView.contentSize = CGSizeMake(ScreenWidth * PageNumber, ScreenHeight/3);
+        _horizontaScrollView.contentSize = CGSizeMake(ScreenWidth * PageNumber, _horizontaScrollView.frame.size.height);
         [_horizontaScrollView setPagingEnabled:YES]; //开启滚动分页功能
         [_horizontaScrollView setShowsHorizontalScrollIndicator:NO]; //隐藏水平滚动条
         //[self imageviewForscrollView:nil imageViewNumber:PageNumber];

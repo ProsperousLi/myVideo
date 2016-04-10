@@ -64,14 +64,25 @@ static int TapBarindex = 0;
     
     [self.videoController pause]; //返回上一页面时，停止播放
     
-    UIViewController * firstPageViewCOntroller;
-    firstPageViewCOntroller = [self.storyboard instantiateViewControllerWithIdentifier:TabBarControllerID];
+    //获取storyboard的ID
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    //由storyboard根据myView的storyBoardID来获取我们要切换的视图
+    UIViewController *myView = [story instantiateViewControllerWithIdentifier:@"tabBarController"];
+    
+    //加入中间视图（tabBarViewController）,左边视图，右边视图。
+    self.leftSlideViewController = [[LeftSlideViewController alloc] init];
+    self.deckController = [[IIViewDeckController alloc] initWithCenterViewController:myView leftViewController:self.leftSlideViewController rightViewController:nil];
+    
+    //点击中间视图，中间视图的控件不响应，返回中间视图
+    self.deckController.centerhiddenInteractivity = IIViewDeckCenterHiddenNotUserInteractiveWithTapToClose;
+    
+    //左边视图显示宽度
+    self.deckController.leftSize = ScreenWidth/2;
+    
     MyCATransition *transition = [[MyCATransition alloc] init];
     [transition transition:2 withView:self.view andToOtherControllerType:0];
-    [self presentViewController:firstPageViewCOntroller animated:NO completion:nil];
-   
+    [self presentViewController:self.deckController animated:NO completion:nil];
 }
-
 
 #pragma mark - 隐藏电池栏的函数调用
 - (BOOL)prefersStatusBarHidden{

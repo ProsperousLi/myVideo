@@ -100,7 +100,7 @@
 -(void) imageviewForscrollView :(id)sender imageViewNumber:(int)imageViewNumber {
     for (int i =0 ; i < imageViewNumber; i++) {
         
-        UIImageView * imageview = [[UIImageView alloc] initWithFrame:CGRectMake(ScreenWidth * i, (ScreenHeight)/8, ScreenWidth, ScreenHeight/3)];
+        UIImageView * imageview = [[UIImageView alloc] initWithFrame:CGRectMake(pageView.horizontaScrollView.frame.size.width * i, 0, pageView.horizontaScrollView.frame.size.width, pageView.horizontaScrollView.frame.size.height)];
         
         if (i == 0) {
             //imageview.backgroundColor = [UIColor redColor];

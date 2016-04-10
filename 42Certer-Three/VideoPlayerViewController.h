@@ -11,15 +11,22 @@
 #import "FirstPageViewController.h"
 #import "MyCATransition.h"
 #import "KrVideoPlayerController.h"
+#include "LeftSlideViewController.h"
+#include <ViewDeck/ViewDeck.h>
 
 
 @interface VideoPlayerViewController : UIViewController{
     KrVideoPlayerController * krVideoPlayerController;
+    
 }
                                                         
 
-@property(retain,nonatomic) UINavigationBar * NavigationBar;
+@property(retain,nonatomic) UINavigationBar *NavigationBar;
 
 @property (nonatomic, strong) KrVideoPlayerController  *videoController;
+
+@property (nonatomic,strong) LeftSlideViewController * leftSlideViewController ; //左边视图
+
+@property (nonatomic,strong) IIViewDeckController *deckController;
 
 @end

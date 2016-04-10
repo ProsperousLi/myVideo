@@ -12,6 +12,11 @@
 
 
 @interface FirstPageView : UIView <UIScrollViewDelegate>
+{
+
+    
+}
+
 
 @property (strong,nonatomic) UIScrollView *verticalScrollView; //竖直滚动
 @property (strong,nonatomic) UIScrollView *horizontaScrollView; //水平滚动
