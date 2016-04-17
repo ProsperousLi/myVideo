@@ -16,6 +16,13 @@
 		D8368AA81C14298100C4E399 /* SearchContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8368AA71C14298100C4E399 /* SearchContentViewController.m */; };
 		D8368AAB1C142B1700C4E399 /* SearchContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8368AAA1C142B1700C4E399 /* SearchContentView.m */; };
 		D85891001C1C165D0059AE8A /* ContentCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D85890FF1C1C165D0059AE8A /* ContentCollectionView.m */; };
+		D864F7841CC3932D009F9D67 /* XRCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = D864F7831CC3932D009F9D67 /* XRCarouselView.m */; };
+		D864F78B1CC396B8009F9D67 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = D864F7851CC396B8009F9D67 /* placeholder.png */; };
+		D864F78C1CC396B8009F9D67 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D864F7861CC396B8009F9D67 /* 2.jpg */; };
+		D864F78D1CC396B8009F9D67 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D864F7871CC396B8009F9D67 /* 3.jpg */; };
+		D864F78E1CC396B8009F9D67 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D864F7881CC396B8009F9D67 /* 1.jpg */; };
+		D864F78F1CC396B8009F9D67 /* current.png in Resources */ = {isa = PBXBuildFile; fileRef = D864F7891CC396B8009F9D67 /* current.png */; };
+		D864F7901CC396B8009F9D67 /* other.png in Resources */ = {isa = PBXBuildFile; fileRef = D864F78A1CC396B8009F9D67 /* other.png */; };
 		D87160DC1C0AF3B700AF0BEA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D87160DB1C0AF3B700AF0BEA /* LoginViewController.m */; };
 		D87160DF1C0AF3D800AF0BEA /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = D87160DE1C0AF3D800AF0BEA /* LoginView.m */; };
 		D87160E41C0AF4A400AF0BEA /* MyCATransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D87160E31C0AF4A400AF0BEA /* MyCATransition.m */; };
@@ -103,6 +110,15 @@
 		D8368AAA1C142B1700C4E399 /* SearchContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchContentView.m; sourceTree = "<group>"; };
 		D85890FE1C1C165D0059AE8A /* ContentCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCollectionView.h; sourceTree = "<group>"; };
 		D85890FF1C1C165D0059AE8A /* ContentCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCollectionView.m; sourceTree = "<group>"; };
+		D864F7821CC3932D009F9D67 /* XRCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRCarouselView.h; sourceTree = "<group>"; };
+		D864F7831CC3932D009F9D67 /* XRCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRCarouselView.m; sourceTree = "<group>"; };
+		D864F7851CC396B8009F9D67 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		D864F7861CC396B8009F9D67 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		D864F7871CC396B8009F9D67 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		D864F7881CC396B8009F9D67 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		D864F7891CC396B8009F9D67 /* current.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = current.png; sourceTree = "<group>"; };
+		D864F78A1CC396B8009F9D67 /* other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = other.png; sourceTree = "<group>"; };
+		D864F7911CC39E59009F9D67 /* top.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = top.geojson; sourceTree = "<group>"; };
 		D87160DA1C0AF3B700AF0BEA /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		D87160DB1C0AF3B700AF0BEA /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		D87160DD1C0AF3D800AF0BEA /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
@@ -309,6 +325,12 @@
 		D8841D851C12D2510093C264 /* FristwelcomePage */ = {
 			isa = PBXGroup;
 			children = (
+				D864F7851CC396B8009F9D67 /* placeholder.png */,
+				D864F7861CC396B8009F9D67 /* 2.jpg */,
+				D864F7871CC396B8009F9D67 /* 3.jpg */,
+				D864F7881CC396B8009F9D67 /* 1.jpg */,
+				D864F7891CC396B8009F9D67 /* current.png */,
+				D864F78A1CC396B8009F9D67 /* other.png */,
 				D8841D861C12D2800093C264 /* welcome1.jpg */,
 				D8841D871C12D2800093C264 /* welcome2.jpg */,
 				D8841D881C12D2800093C264 /* welcome3.jpg */,
@@ -522,6 +544,8 @@
 		D8B690F01C0AE35700CD3A2C /* view */ = {
 			isa = PBXGroup;
 			children = (
+				D864F7821CC3932D009F9D67 /* XRCarouselView.h */,
+				D864F7831CC3932D009F9D67 /* XRCarouselView.m */,
 				D8E6F5421CB9F736004F9AF1 /* FirstPageView.h */,
 				D87EA11B1C1412CC00FBE2F5 /* FirstPageView.m */,
 				D8CB71811CB90C7400EAE192 /* LeftSlideView.h */,
@@ -555,6 +579,7 @@
 		D8B690F31C0AE69A00CD3A2C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D864F7911CC39E59009F9D67 /* top.geojson */,
 				D8846A011C9AA62A008234E8 /* READEME.md */,
 				69BAEEC91C98F0BB00B0E091 /* Framework */,
 				D8A3C4311C0C644000E7564B /* Constant */,
@@ -755,6 +780,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8841D8B1C12D2800093C264 /* welcome3.jpg in Resources */,
+				D864F78F1CC396B8009F9D67 /* current.png in Resources */,
 				D8B2449C1C11749F00858071 /* anim_loading.gif in Resources */,
 				D8846A041C9AA62A008234E8 /* kr-video-player-fullscreen@2x.png in Resources */,
 				D8846A051C9AA62A008234E8 /* kr-video-player-fullscreen@3x.png in Resources */,
@@ -763,22 +789,27 @@
 				D819537E1CB8EAD500373E83 /* Main.storyboard in Resources */,
 				D8846A061C9AA62A008234E8 /* kr-video-player-pause@2x.png in Resources */,
 				D8841D891C12D2800093C264 /* welcome1.jpg in Resources */,
+				D864F7901CC396B8009F9D67 /* other.png in Resources */,
 				D8846A021C9AA62A008234E8 /* kr-video-player-close@2x.png in Resources */,
 				D8B690C71C0AD21200CD3A2C /* LaunchScreen.storyboard in Resources */,
 				D8B690EF1C0AD53E00CD3A2C /* Assets.xcassets in Resources */,
 				D8841D8A1C12D2800093C264 /* welcome2.jpg in Resources */,
 				D8B691131C0AED0600CD3A2C /* home_select.png in Resources */,
 				D8846A081C9AA62A008234E8 /* kr-video-player-play@2x.png in Resources */,
+				D864F78D1CC396B8009F9D67 /* 3.jpg in Resources */,
 				D87A6B0D1CB3EA52005E9A6C /* SelectMore.png in Resources */,
 				D8846A0C1C9AA62A008234E8 /* kr-video-player-shrinkscreen@2x.png in Resources */,
 				D8846A0A1C9AA62A008234E8 /* kr-video-player-point@2x.png in Resources */,
 				D8846A091C9AA62A008234E8 /* kr-video-player-play@3x.png in Resources */,
 				D8B691101C0AED0600CD3A2C /* bnt_net_selected.png in Resources */,
 				D87A6B0A1CB3EA52005E9A6C /* NormalMore.png in Resources */,
+				D864F78C1CC396B8009F9D67 /* 2.jpg in Resources */,
 				D8B691121C0AED0600CD3A2C /* bnt_search_selected.png in Resources */,
+				D864F78E1CC396B8009F9D67 /* 1.jpg in Resources */,
 				D8846A071C9AA62A008234E8 /* kr-video-player-pause@3x.png in Resources */,
 				D8846A0B1C9AA62A008234E8 /* kr-video-player-point@3x.png in Resources */,
 				D8B6910F1C0AED0600CD3A2C /* bnt_channel_selected.png in Resources */,
+				D864F78B1CC396B8009F9D67 /* placeholder.png in Resources */,
 				D8B691111C0AED0600CD3A2C /* bnt_search_normal.png in Resources */,
 				D8846A031C9AA62A008234E8 /* kr-video-player-close@3x.png in Resources */,
 			);
@@ -877,6 +908,7 @@
 				D8B2449F1C118ADD00858071 /* ActivityView.m in Sources */,
 				D8B690BC1C0AD21200CD3A2C /* ViewController.m in Sources */,
 				69BAEECD1C98F3CD00B0E091 /* VideoPlayerViewController.m in Sources */,
+				D864F7841CC3932D009F9D67 /* XRCarouselView.m in Sources */,
 				D87160DF1C0AF3D800AF0BEA /* LoginView.m in Sources */,
 				D8B690B91C0AD21200CD3A2C /* AppDelegate.m in Sources */,
 				D892ED371C2195A5008E0F27 /* DataJson.m in Sources */,

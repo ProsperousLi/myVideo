@@ -1,0 +1,551 @@
+{
+    "what": 200,
+    "object": [
+               {
+               "videoMulti": {
+               "id": 4,
+               "userAccount": "root",
+               "isRecommend": 1,
+               "isTop": 1,
+               "name": "123",
+               "director": "123",
+               "actors": "123",
+               "typeLevel0": 4,
+               "typeLevel1": "7,8,9,10,11,13,15,16,18,19",
+               "typeLevel2": 25,
+               "preview": "/upload/image/jpeg/1458041879175.jpeg",
+               "introduce": "123",
+               "releaseTime": 2016,
+               "score": 6,
+               "clickCount": 311,
+               "validate": 1,
+               "recordTime": 1458049312000
+               },
+               "user": {
+               "account": "root",
+               "nickname": "root",
+               "roleType": 0,
+               "validate": 1,
+               "recordTime": 1457499772000
+               },
+               "videoTypeLevel_0": {
+               "id": 4,
+               "name": "动漫",
+               "level": 0,
+               "recordTime": 1457499772000
+               },
+               "videoTypeLevel_1": [
+                                    {
+                                    "id": 7,
+                                    "name": "综艺",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 8,
+                                    "name": "爱情",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 9,
+                                    "name": "动作",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 10,
+                                    "name": "冒险",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 11,
+                                    "name": "古装",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 13,
+                                    "name": "悬疑",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 15,
+                                    "name": "魔幻",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 16,
+                                    "name": "恐怖",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 18,
+                                    "name": "文艺",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 19,
+                                    "name": "音乐",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    }
+                                    ],
+               "videoTypeLevel_2": {
+               "id": 25,
+               "name": "日本",
+               "level": 2,
+               "recordTime": 1457499772000
+               }
+               },
+               {
+               "videoMulti": {
+               "id": 2,
+               "userAccount": "root",
+               "isRecommend": 1,
+               "isTop": 1,
+               "name": "123",
+               "director": "123",
+               "actors": "123",
+               "typeLevel0": 3,
+               "typeLevel1": "9,10,12,15,16,17,19",
+               "typeLevel2": 23,
+               "preview": "/upload/image/jpeg/1458041869377.jpeg",
+               "introduce": "123",
+               "releaseTime": 2016,
+               "score": 8,
+               "clickCount": 169,
+               "validate": 1,
+               "recordTime": 1458049311000
+               },
+               "user": {
+               "account": "root",
+               "nickname": "root",
+               "roleType": 0,
+               "validate": 1,
+               "recordTime": 1457499772000
+               },
+               "videoTypeLevel_0": {
+               "id": 3,
+               "name": "电视剧",
+               "level": 0,
+               "recordTime": 1457499772000
+               },
+               "videoTypeLevel_1": [
+                                    {
+                                    "id": 9,
+                                    "name": "动作",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 10,
+                                    "name": "冒险",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 12,
+                                    "name": "喜剧",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 15,
+                                    "name": "魔幻",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 16,
+                                    "name": "恐怖",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 17,
+                                    "name": "灾难",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 19,
+                                    "name": "音乐",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    }
+                                    ],
+               "videoTypeLevel_2": {
+               "id": 23,
+               "name": "台湾",
+               "level": 2,
+               "recordTime": 1457499772000
+               }
+               },
+               {
+               "videoMulti": {
+               "id": 5,
+               "userAccount": "root",
+               "isRecommend": 1,
+               "isTop": 1,
+               "name": "123",
+               "director": "123",
+               "actors": "123",
+               "typeLevel0": 3,
+               "typeLevel1": "7,9,12,14,17,18,19",
+               "typeLevel2": 28,
+               "preview": "/upload/image/jpeg/1458041895284.jpeg",
+               "introduce": "123",
+               "releaseTime": 2016,
+               "score": 6,
+               "clickCount": 110,
+               "validate": 1,
+               "recordTime": 1458049333000
+               },
+               "user": {
+               "account": "root",
+               "nickname": "root",
+               "roleType": 0,
+               "validate": 1,
+               "recordTime": 1457499772000
+               },
+               "videoTypeLevel_0": {
+               "id": 3,
+               "name": "电视剧",
+               "level": 0,
+               "recordTime": 1457499772000
+               },
+               "videoTypeLevel_1": [
+                                    {
+                                    "id": 7,
+                                    "name": "综艺",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 9,
+                                    "name": "动作",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 12,
+                                    "name": "喜剧",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 14,
+                                    "name": "科幻",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 17,
+                                    "name": "灾难",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 18,
+                                    "name": "文艺",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 19,
+                                    "name": "音乐",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    }
+                                    ],
+               "videoTypeLevel_2": {
+               "id": 28,
+               "name": "英国",
+               "level": 2,
+               "recordTime": 1457499772000
+               }
+               },
+               {
+               "videoMulti": {
+               "id": 3,
+               "userAccount": "root",
+               "isRecommend": 1,
+               "isTop": 1,
+               "name": "123",
+               "director": "123",
+               "actors": "123",
+               "typeLevel0": 2,
+               "typeLevel1": "6,8,11,12,13,14,15,16,17,19",
+               "typeLevel2": 25,
+               "preview": "/upload/image/jpeg/1458041859152.jpeg",
+               "introduce": "123",
+               "releaseTime": 2016,
+               "score": 5,
+               "clickCount": 62,
+               "validate": 1,
+               "recordTime": 1458049315000
+               },
+               "user": {
+               "account": "root",
+               "nickname": "root",
+               "roleType": 0,
+               "validate": 1,
+               "recordTime": 1457499772000
+               },
+               "videoTypeLevel_0": {
+               "id": 2,
+               "name": "电影",
+               "level": 0,
+               "recordTime": 1457499772000
+               },
+               "videoTypeLevel_1": [
+                                    {
+                                    "id": 6,
+                                    "name": "教育",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 8,
+                                    "name": "爱情",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 11,
+                                    "name": "古装",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 12,
+                                    "name": "喜剧",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 13,
+                                    "name": "悬疑",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 14,
+                                    "name": "科幻",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 15,
+                                    "name": "魔幻",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 16,
+                                    "name": "恐怖",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 17,
+                                    "name": "灾难",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 19,
+                                    "name": "音乐",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    }
+                                    ],
+               "videoTypeLevel_2": {
+               "id": 25,
+               "name": "日本",
+               "level": 2,
+               "recordTime": 1457499772000
+               }
+               },
+               {
+               "videoMulti": {
+               "id": 7,
+               "userAccount": "root",
+               "isRecommend": 1,
+               "isTop": 1,
+               "name": "123",
+               "director": "123",
+               "actors": "123",
+               "typeLevel0": 5,
+               "typeLevel1": "7,8,9,11,12,16,18,20",
+               "typeLevel2": 26,
+               "preview": "/upload/image/jpeg/1458041916630.jpeg",
+               "introduce": "123",
+               "releaseTime": 2016,
+               "score": 8,
+               "clickCount": 31,
+               "validate": 1,
+               "recordTime": 1458049314000
+               },
+               "user": {
+               "account": "root",
+               "nickname": "root",
+               "roleType": 0,
+               "validate": 1,
+               "recordTime": 1457499772000
+               },
+               "videoTypeLevel_0": {
+               "id": 5,
+               "name": "其它",
+               "level": 0,
+               "recordTime": 1460694122000
+               },
+               "videoTypeLevel_1": [
+                                    {
+                                    "id": 7,
+                                    "name": "综艺",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 8,
+                                    "name": "爱情",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 9,
+                                    "name": "动作",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 11,
+                                    "name": "古装",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 12,
+                                    "name": "喜剧",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 16,
+                                    "name": "恐怖",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 18,
+                                    "name": "文艺",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 20,
+                                    "name": "其它",
+                                    "level": 1,
+                                    "recordTime": 1460694128000
+                                    }
+                                    ],
+               "videoTypeLevel_2": {
+               "id": 26,
+               "name": "韩国",
+               "level": 2,
+               "recordTime": 1457499772000
+               }
+               },
+               {
+               "videoMulti": {
+               "id": 21,
+               "userAccount": "root",
+               "isRecommend": 1,
+               "isTop": 1,
+               "name": "123",
+               "director": "123",
+               "actors": "123",
+               "typeLevel0": 3,
+               "typeLevel1": "9,10,12,15,16,17,19",
+               "typeLevel2": 23,
+               "preview": "/upload/image/jpeg/1458041869377.jpeg",
+               "introduce": "123",
+               "releaseTime": 2016,
+               "score": 8,
+               "clickCount": 26,
+               "validate": 1,
+               "recordTime": 1458049311000
+               },
+               "user": {
+               "account": "root",
+               "nickname": "root",
+               "roleType": 0,
+               "validate": 1,
+               "recordTime": 1457499772000
+               },
+               "videoTypeLevel_0": {
+               "id": 3,
+               "name": "电视剧",
+               "level": 0,
+               "recordTime": 1457499772000
+               },
+               "videoTypeLevel_1": [
+                                    {
+                                    "id": 9,
+                                    "name": "动作",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 10,
+                                    "name": "冒险",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 12,
+                                    "name": "喜剧",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 15,
+                                    "name": "魔幻",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 16,
+                                    "name": "恐怖",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 17,
+                                    "name": "灾难",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    },
+                                    {
+                                    "id": 19,
+                                    "name": "音乐",
+                                    "level": 1,
+                                    "recordTime": 1457499772000
+                                    }
+                                    ],
+               "videoTypeLevel_2": {
+               "id": 23,
+               "name": "台湾",
+               "level": 2,
+               "recordTime": 1457499772000
+               }
+               }
+               ]
+}

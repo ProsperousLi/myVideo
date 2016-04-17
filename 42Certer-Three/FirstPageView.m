@@ -8,7 +8,7 @@
 
 #import "FirstPageView.h"
 
-@implementation FirstPageView
+@implementation FirstPageView 
 
 -(id)init {
     if (self = [super init]) {
@@ -42,47 +42,78 @@
         
         [_verticalScrollView setShowsVerticalScrollIndicator:NO];//隐藏竖直滚动条
         //[_verticalScrollView addSubview:self.backgroudimageView];
-        [_verticalScrollView addSubview:self.horizontaScrollView];
-        [_verticalScrollView addSubview:self.pageControl];
+        [self picturesTurn];
         [_verticalScrollView addSubview:self.moreButton];
         [_verticalScrollView addSubview:self.moreView];
+        
+        
+
+        
     }
     
     return _verticalScrollView;
 }
 
 
-#pragma mark 广告页
--(UIScrollView*)horizontaScrollView {
-    if (!_horizontaScrollView) {
-        //水平视图滚动horizontaScrollView
-        _horizontaScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, (ScreenHeight)/6, ScreenWidth, 2*ScreenHeight/7)];
-        [_horizontaScrollView setDelegate:self];
-        _horizontaScrollView.contentSize = CGSizeMake(ScreenWidth * PageNumber, _horizontaScrollView.frame.size.height);
-        [_horizontaScrollView setPagingEnabled:YES]; //开启滚动分页功能
-        [_horizontaScrollView setShowsHorizontalScrollIndicator:NO]; //隐藏水平滚动条
-        //[self imageviewForscrollView:nil imageViewNumber:PageNumber];
-    }
-    return _horizontaScrollView;
+//图片轮播
+-(void)picturesTurn {
+    
+    //既有本地图片也有网络图片
+    NSArray *arr3 = @[@"http://www.5068.com/u/faceimg/20140725173411.jpg", [UIImage imageNamed:@"2.jpg"], @"http://file27.mafengwo.net/M00/52/F2/wKgB6lO_PTyAKKPBACID2dURuk410.jpeg", [UIImage imageNamed:@"welcome1.jpg"]];
+    
+    NSArray *describeArray = @[@"图片1", @"图片2", @"图片3", @"图片4"];
+    
+    /**
+     *  通过代码创建
+     */
+    self.carouselView = [XRCarouselView carouselViewWithImageArray:arr3 describeArray:describeArray];
+    
+    //设置frame
+    self.carouselView.frame = CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 180);
+    
+//    //用block处理图片点击
+//        self.carouselView.imageClickBlock = ^(NSInteger index) {
+//            NSLog(@"第%ld张图片被点击", index);
+//            
+//        };
+    
+    //用代理处理图片点击，如果两个都实现，block优先级高于代理
+    self.carouselView.delegate = self;
+    
+    
+    //设置每张图片的停留时间
+    _carouselView.time = 2;
+    
+    //设置分页控件的图片,不设置则为系统默认
+    [_carouselView setPageImage:[UIImage imageNamed:@"other"] andCurrentImage:[UIImage imageNamed:@"current"]];
+    
+    //设置分页控件的位置，默认为PositionBottomCenter
+    _carouselView.pagePosition = PositionBottomRight;
+    
+    /**
+     *  设置图片描述控件
+     */
+    //设置背景颜色，默认为黑色半透明
+    _carouselView.desLabelBgColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
+    //设置字体，默认为13号字体
+    _carouselView.desLabelFont = [UIFont systemFontOfSize:16];
+    //设置文字颜色，默认为白色
+    _carouselView.desLabelColor = [UIColor greenColor];
+    
+    [_verticalScrollView addSubview:_carouselView];
+    
+    
+    /**
+     *  通过storyboard创建的轮播控件
+     */
+    //        _carouselView1.imageArray = arr3;
+    //        //设置分页控件指示器的颜色
+    //        [_carouselView1 setPageColor:[UIColor redColor] andCurrentPageColor:[UIColor blueColor]];
+    //        _carouselView1.time = 2;
 }
 
 
 
-
-
-
-#pragma  mark pageViewController,翻页时显示的小圆点
--(UIPageControl*)pageControl {
-    if (!_pageControl) {
-        _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(ScreenWidth/2 - ScreenWidth/11, ScreenHeight/3 + ScreenHeight/19, (ScreenWidth)/8, (ScreenWidth)/8)];
-        _pageControl.backgroundColor = [UIColor clearColor];//透明色
-        NSString *str = [NSString stringWithFormat:@"%d",PageNumber]; //页数
-        NSInteger pageNumberInteger = [str integerValue];
-        [_pageControl setNumberOfPages:pageNumberInteger];//设置页数;
-        [_pageControl addTarget:self action:@selector(pageChange:) forControlEvents:UIControlEventValueChanged];
-    }
-    return _pageControl;
-}
 
 
 #pragma mark 更多按钮
@@ -112,38 +143,6 @@
     return _moreView;
 }
 
-
-#pragma mark  页面滚动时调用，设置当前页面的ID
--(void)scrollViewDidScroll:(UIScrollView *)scrollView {
-
-    if (scrollView == _horizontaScrollView) {
-//                if (scrollView.contentOffset.x > ScreenWidth * 2) {
-//        
-//                    [_pageControl setCurrentPage:1];
-//                }
-        [_pageControl setCurrentPage:fabs(scrollView.contentOffset.x/ScreenWidth)];
-       // NSLog(@"%f",fabs(scrollView.contentOffset.x/ScreenWidth));
-        
-        NSLog(@"_horizontaScrollView");
-        //NSLog(@"视图滚动中X轴坐标%f",scrollView.contentOffset.x);
-        //NSLog(@"视图滚动中Y轴坐标%f",scrollView.contentOffset.y);
-    }
-    else if (scrollView == _verticalScrollView) {
-        NSLog(@"_verticalScrollView");
-        //NSLog(@"视图滚动中X轴坐标%f",scrollView.contentOffset.x);
-        //NSLog(@"视图滚动中Y轴坐标%f",scrollView.contentOffset.y);
-    }
-    
-}
-
-#pragma mark 当scroll改变时，触发此方法
--(void) pageChange:(id)sender {
-//    if (_horizontaScrollView.contentOffset.x > ScreenWidth * 2) {
-//        
-//        [_pageControl setCurrentPage:1];
-//    }
-    //NSInteger page = [sender currentPage];
-}
 
 #pragma mark 更多按钮响应事件
 -(void)moreButtonAction:(id)sender {

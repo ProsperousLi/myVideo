@@ -16,8 +16,12 @@
     pageView = [[FirstPageView alloc] init];
     [pageView.moreView addSubview:self.tableView];
     [self customButtonsAddWithDelete:nil showNumberButtonsInOneLine:PageNumber];
-    [self imageviewForscrollView:nil imageViewNumber:PageNumber];
     [self.view addSubview:pageView];
+    pageView.carouselView.imageClickBlock = ^(NSInteger index) {
+        [self ImageViewSingleTapAction:index];
+    };
+    
+    
 }
 
 
@@ -96,40 +100,8 @@
 
 
 
-#pragma mark 设置imageview的个数，添加到scroll里面去
--(void) imageviewForscrollView :(id)sender imageViewNumber:(int)imageViewNumber {
-    for (int i =0 ; i < imageViewNumber; i++) {
-        
-        UIImageView * imageview = [[UIImageView alloc] initWithFrame:CGRectMake(pageView.horizontaScrollView.frame.size.width * i, 0, pageView.horizontaScrollView.frame.size.width, pageView.horizontaScrollView.frame.size.height)];
-        
-        if (i == 0) {
-            //imageview.backgroundColor = [UIColor redColor];
-            [imageview setImage:[UIImage imageNamed:@"welcome1.jpg"]]; //设置图片而不是alloc。
-            imageview.contentMode = UIViewContentModeScaleAspectFill; //设置图片的显示方式
-            imageview.clipsToBounds = YES; //隐藏超出的部分
-            
-        }
-        else if (i == 1) {
-            imageview.backgroundColor = [UIColor grayColor];
-        }
-        else {
-            imageview.backgroundColor = [UIColor greenColor];
-        }
-        
-        //使imageView响应点击事件的操作
-        imageview.tag = i + 1; //设置tag
-        [imageview setUserInteractionEnabled:true]; //接口开放,目的使其可点击
-        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(ImageViewSingleTapAction:)];
-        [imageview addGestureRecognizer:singleTap];
-        
-        //添加视图
-        [pageView.horizontaScrollView addSubview:imageview];
-    }
-}
-
-
 #pragma mark 广告页可点击响应事件
--(void)ImageViewSingleTapAction:(UIImageView*)sender {
+-(void)ImageViewSingleTapAction:(NSInteger)sender {
     _videoPlayController= [self.storyboard instantiateViewControllerWithIdentifier:VideoPlayViewControllerID];
     MyCATransition *transition = [[MyCATransition alloc] init];
     [transition transition:7 withView:self.view andToOtherControllerType:0];
@@ -143,7 +115,7 @@
 //        _tableView = [[UITableView alloc] initWithFrame:pageView.moreView.bounds style:UITableViewStyleGrouped];
 //        _tableView.dataSource = self;
 //    }
-    
+//    
     return _tableView;
 }
 

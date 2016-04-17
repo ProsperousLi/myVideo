@@ -9,21 +9,18 @@
 #import <UIKit/UIKit.h>
 #import "AppConstant.h"
 #import "MyCATransition.h"
+#import "XRCarouselView.h"
+
+@interface FirstPageView : UIView <XRCarouselViewDelegate,UIScrollViewDelegate>
 
 
-@interface FirstPageView : UIView <UIScrollViewDelegate>
-{
-
-    
-}
-
+@property (nonatomic, strong) XRCarouselView *carouselView;
 
 @property (strong,nonatomic) UIScrollView *verticalScrollView; //竖直滚动
-@property (strong,nonatomic) UIScrollView *horizontaScrollView; //水平滚动
-@property (strong,nonatomic) UIPageControl *pageControl; //分页
 @property (nonatomic,retain) NSMutableArray *customButtonContents; //存储按钮的文字内容
 @property (strong,nonatomic) UIImageView * backgroudimageView; //背景
 @property (nonatomic,strong) UIButton *moreButton; //更多的按钮
 @property (nonatomic,strong) UIView *moreView; //更多显示内容
+@property (nonatomic,strong) UILabel *title;
 
 @end

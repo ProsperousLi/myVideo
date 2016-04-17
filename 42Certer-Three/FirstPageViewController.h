@@ -12,7 +12,7 @@
 #import "FirstPageView.h"
 #import "SearchContentViewController.h"
 
-@interface FirstPageViewController : SearchContentViewController
+@interface FirstPageViewController : SearchContentViewController  <UIScrollViewDelegate>
 {
     @private
     FirstPageView *pageView;
