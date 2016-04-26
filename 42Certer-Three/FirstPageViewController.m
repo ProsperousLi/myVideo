@@ -35,7 +35,7 @@
     [self setValuesForCustomButtons]; //调用方法，初始化button的内容
     //众多按钮的透明背景
     _BUttonbackgroudView = [[UIView alloc] initWithFrame:CGRectMake(0, ScreenHeight/2, ScreenWidth, ScreenHeight/3 - (ScreenHeight/11) * 2 + ScreenHeight/15)];
-    _BUttonbackgroudView.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.8];
+    _BUttonbackgroudView.backgroundColor = [UIColor colorWithHex:main_background_key_color alpha:0.8];
     [pageView.verticalScrollView addSubview:_BUttonbackgroudView];
     
     for (int i = 1; i <= _customButtonContents.count; i++) { //按钮布局

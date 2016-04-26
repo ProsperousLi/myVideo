@@ -38,7 +38,7 @@
         _verticalScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
         [_verticalScrollView setDelegate:self];
         _verticalScrollView.contentSize = CGSizeMake(ScreenWidth , ScreenHeight * 3);
-        _verticalScrollView.backgroundColor = [UIColor whiteColor];
+        _verticalScrollView.backgroundColor = [UIColor colorWithHex:main_background_color];
         
         [_verticalScrollView setShowsVerticalScrollIndicator:NO];//隐藏竖直滚动条
         //[_verticalScrollView addSubview:self.backgroudimageView];

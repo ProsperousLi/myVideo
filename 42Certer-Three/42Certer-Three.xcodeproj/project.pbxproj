@@ -73,6 +73,10 @@
 		D8B691121C0AED0600CD3A2C /* bnt_search_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B6910D1C0AED0600CD3A2C /* bnt_search_selected.png */; };
 		D8B691131C0AED0600CD3A2C /* home_select.png in Resources */ = {isa = PBXBuildFile; fileRef = D8B6910E1C0AED0600CD3A2C /* home_select.png */; };
 		D8B6911A1C0AEF0700CD3A2C /* backage_ground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8B691191C0AEF0700CD3A2C /* backage_ground.jpg */; };
+		D8BE734E1CC3A18E0084B0AE /* strings.xml in Resources */ = {isa = PBXBuildFile; fileRef = D8BE734D1CC3A18E0084B0AE /* strings.xml */; };
+		D8BE73501CC3A1930084B0AE /* CYQI3MXJW08PC5TJR141M%C.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BE734F1CC3A1930084B0AE /* CYQI3MXJW08PC5TJR141M%C.png */; };
+		D8BE73521CC3A1B90084B0AE /* color.xml in Resources */ = {isa = PBXBuildFile; fileRef = D8BE73511CC3A1B90084B0AE /* color.xml */; };
+		D8BE735B1CC3A3A60084B0AE /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BE735A1CC3A3A60084B0AE /* UIColor+Hex.m */; };
 		D8CB71831CB90C7400EAE192 /* LeftSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CB71821CB90C7400EAE192 /* LeftSlideView.m */; };
 		D8CB71861CB90C9F00EAE192 /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CB71851CB90C9F00EAE192 /* LeftSlideViewController.m */; };
 		D8E6F5411CB9F615004F9AF1 /* SlideLeftAndRightInit.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E6F5401CB9F615004F9AF1 /* SlideLeftAndRightInit.m */; };
@@ -187,6 +191,11 @@
 		D8B6910D1C0AED0600CD3A2C /* bnt_search_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bnt_search_selected.png; sourceTree = "<group>"; };
 		D8B6910E1C0AED0600CD3A2C /* home_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_select.png; sourceTree = "<group>"; };
 		D8B691191C0AEF0700CD3A2C /* backage_ground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backage_ground.jpg; sourceTree = "<group>"; };
+		D8BE734D1CC3A18E0084B0AE /* strings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = strings.xml; sourceTree = "<group>"; };
+		D8BE734F1CC3A1930084B0AE /* CYQI3MXJW08PC5TJR141M%C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CYQI3MXJW08PC5TJR141M%C.png"; sourceTree = "<group>"; };
+		D8BE73511CC3A1B90084B0AE /* color.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = color.xml; sourceTree = "<group>"; };
+		D8BE73591CC3A3A60084B0AE /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		D8BE735A1CC3A3A60084B0AE /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		D8CB71811CB90C7400EAE192 /* LeftSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideView.h; sourceTree = "<group>"; };
 		D8CB71821CB90C7400EAE192 /* LeftSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideView.m; sourceTree = "<group>"; };
 		D8CB71841CB90C9F00EAE192 /* LeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideViewController.h; sourceTree = "<group>"; };
@@ -579,8 +588,8 @@
 		D8B690F31C0AE69A00CD3A2C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				D864F7911CC39E59009F9D67 /* top.geojson */,
-				D8846A011C9AA62A008234E8 /* READEME.md */,
+				D8BE73541CC3A3270084B0AE /* HexColor */,
+				D8BE73531CC3A1C80084B0AE /* others */,
 				69BAEEC91C98F0BB00B0E091 /* Framework */,
 				D8A3C4311C0C644000E7564B /* Constant */,
 				D8A61A8C1C0F0E5A00B642CD /* StoryBoards */,
@@ -668,6 +677,27 @@
 				D87160DB1C0AF3B700AF0BEA /* LoginViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		D8BE73531CC3A1C80084B0AE /* others */ = {
+			isa = PBXGroup;
+			children = (
+				D8BE73511CC3A1B90084B0AE /* color.xml */,
+				D8BE734F1CC3A1930084B0AE /* CYQI3MXJW08PC5TJR141M%C.png */,
+				D8BE734D1CC3A18E0084B0AE /* strings.xml */,
+				D864F7911CC39E59009F9D67 /* top.geojson */,
+				D8846A011C9AA62A008234E8 /* READEME.md */,
+			);
+			name = others;
+			sourceTree = "<group>";
+		};
+		D8BE73541CC3A3270084B0AE /* HexColor */ = {
+			isa = PBXGroup;
+			children = (
+				D8BE73591CC3A3A60084B0AE /* UIColor+Hex.h */,
+				D8BE735A1CC3A3A60084B0AE /* UIColor+Hex.m */,
+			);
+			name = HexColor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -779,6 +809,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8BE734E1CC3A18E0084B0AE /* strings.xml in Resources */,
 				D8841D8B1C12D2800093C264 /* welcome3.jpg in Resources */,
 				D864F78F1CC396B8009F9D67 /* current.png in Resources */,
 				D8B2449C1C11749F00858071 /* anim_loading.gif in Resources */,
@@ -787,6 +818,7 @@
 				D8B6911A1C0AEF0700CD3A2C /* backage_ground.jpg in Resources */,
 				D8846A0D1C9AA62A008234E8 /* kr-video-player-shrinkscreen@3x.png in Resources */,
 				D819537E1CB8EAD500373E83 /* Main.storyboard in Resources */,
+				D8BE73501CC3A1930084B0AE /* CYQI3MXJW08PC5TJR141M%C.png in Resources */,
 				D8846A061C9AA62A008234E8 /* kr-video-player-pause@2x.png in Resources */,
 				D8841D891C12D2800093C264 /* welcome1.jpg in Resources */,
 				D864F7901CC396B8009F9D67 /* other.png in Resources */,
@@ -804,6 +836,7 @@
 				D8B691101C0AED0600CD3A2C /* bnt_net_selected.png in Resources */,
 				D87A6B0A1CB3EA52005E9A6C /* NormalMore.png in Resources */,
 				D864F78C1CC396B8009F9D67 /* 2.jpg in Resources */,
+				D8BE73521CC3A1B90084B0AE /* color.xml in Resources */,
 				D8B691121C0AED0600CD3A2C /* bnt_search_selected.png in Resources */,
 				D864F78E1CC396B8009F9D67 /* 1.jpg in Resources */,
 				D8846A071C9AA62A008234E8 /* kr-video-player-pause@3x.png in Resources */,
@@ -913,6 +946,7 @@
 				D8B690B91C0AD21200CD3A2C /* AppDelegate.m in Sources */,
 				D892ED371C2195A5008E0F27 /* DataJson.m in Sources */,
 				D85891001C1C165D0059AE8A /* ContentCollectionView.m in Sources */,
+				D8BE735B1CC3A3A60084B0AE /* UIColor+Hex.m in Sources */,
 				D8CB71831CB90C7400EAE192 /* LeftSlideView.m in Sources */,
 				D8B690B61C0AD21200CD3A2C /* main.m in Sources */,
 			);

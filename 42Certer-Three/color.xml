@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_background_color">#F7F7F7</color>
+    <color name="main_background_normal_color">#FFFFFF</color>
+    <color name="main_background_key_color">#F1EFF0</color>
+    <color name="main_background_color_weigth">#D1CFD0</color>
+    <color name="main_background_color_warning">#FFFFCC</color>
+    
+    <color name="main_bottom_background_color">#ECEAEB</color>
+    <color name="main_drawer_background_color">#E5E3DDDD</color>
+    
+    <color name="main_text_key_word_color">#D45D63</color>
+    <color name="main_text_title_color">#575354</color>
+    <color name="main_text_subtitle_color">#949293</color>
+    <color name="main_text_normal_color">#FFFFFF</color>
+    <color name="main_text_hint_color">#0000FF</color>
+    <color name="main_text_player">#CCD45D63</color>
+    
+    <color name="main_mask_color">#AA424242</color>
+    <color name="main_mask_lighter_color">#99000000</color>
+    
+    <color name="main_button_background_color">#D45D63</color>
+    <color name="main_selector_selected_color">#66666666</color>
+    <color name="main_head_background_color">#D45D63</color>
+    <color name="main_mediacontroller_bg">#99000000</color>
+    <color name="main_loading_line">#D45D63</color>
+
+</resources>
+
+
+
+//ios下宏定义
+
+#pragma mark - 颜色配置
+#define main_background_color 0xF7F7F7
+#define main_background_normal_color 0xFFFFFF
+#define main_background_key_color 0xF1EFF0
+#define main_background_color_weigth 0xD1CFD0
+#define main_background_color_warning 0xFFFFCC
+#define main_bottom_background_color 0xECEAEB
+#define main_drawer_background_color 0xE3DDDD  //透明度：alpha 0.899
+#define main_text_key_word_color 0xD45D63
+#define main_text_title_color 0x575354
+#define main_text_subtitle_color 0x949293
+#define main_text_normal_color 0xFFFFFF
+#define main_text_hint_color 0x0000FF
+#define main_text_player 0xD45D63   //alpha 0.8
+#define main_mask_color 0x424242  //alpha 0.67
+#define main_mask_lighter_color 0x000000 //alpha 0.6
+#define main_button_background_color 0xD45D63
+#define main_selector_selected_color 0x666666  //alpha 0.4
+#define main_head_background_color 0xD45D63
+#define main_mediacontroller_bg 0x000000  //alpha 0.6
+#define main_loading_line 0xD45D63
+

@@ -10,6 +10,7 @@
 #import "AppConstant.h"
 #import "MyCATransition.h"
 #import "XRCarouselView.h"
+#import "UIColor+Hex.h"
 
 @interface FirstPageView : UIView <XRCarouselViewDelegate,UIScrollViewDelegate>
 

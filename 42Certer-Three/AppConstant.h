@@ -18,6 +18,28 @@
 #define ScreenHeight [[UIScreen mainScreen] bounds].size.height
 
 
+#pragma mark - 颜色配置
+#define main_background_color 0xF7F7F7
+#define main_background_normal_color 0xFFFFFF
+#define main_background_key_color 0xF1EFF0
+#define main_background_color_weigth 0xD1CFD0
+#define main_background_color_warning 0xFFFFCC
+#define main_bottom_background_color 0xECEAEB
+#define main_drawer_background_color 0xE3DDDD  //透明度：alpha 0.899    筛选框
+#define main_text_key_word_color 0xD45D63  //按钮字体红色
+#define main_text_title_color 0x575354      //标题颜色
+#define main_text_subtitle_color 0x949293
+#define main_text_normal_color 0xFFFFFF
+#define main_text_hint_color 0x0000FF
+#define main_text_player 0xD45D63   //alpha 0.8
+#define main_mask_color 0x424242  //alpha 0.67
+#define main_mask_lighter_color 0x000000 //alpha 0.6
+#define main_button_background_color 0xD45D63
+#define main_selector_selected_color 0x666666  //alpha 0.4
+#define main_head_background_color 0xD45D63             //登录按钮
+#define main_mediacontroller_bg 0x000000  //alpha 0.6
+#define main_loading_line 0xD45D63
+
 #pragma mark 登录界面
 #define deLoginTextInfo @"请输入账号"
 #define dePwdInTextInfo @"请输入密码"

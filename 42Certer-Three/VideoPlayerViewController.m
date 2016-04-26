@@ -97,7 +97,7 @@ static int TapBarindex = 0;
 
 
 - (void)playVideo{
-    NSURL *url = [NSURL URLWithString:@"http://120.27.45.44:8080/mrs/upload/video/mp4/1457515166329.mp4"];
+    NSURL *url = [NSURL URLWithString:@"http://120.27.45.44/mrs/upload/video/mp4/1460608855770.mp4"];
     //NSURL *url = [NSURL URLWithString:@"http://krtv.qiniudn.com/150522nextapp"];
     [self addVideoPlayerWithURL:url];
 }
