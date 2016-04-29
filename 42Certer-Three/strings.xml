@@ -1,7 +1,7 @@
 
     <!-- s net -->
     主站
-	<string name="net_host">http://120.27.45.44/mrs</string>
+	<string name="net_host">http://172.24.4.44/mrs</string>
 
     dr客户端的连接地址和断开地址
     <string name="net_host_drcom_connection">/util/drcom/host/connection</string>
@@ -40,7 +40,7 @@
 
     根据剧集里面的文件ID拿播放地址
 	<string name="net_video_parts_file">/video/file/http/id/</string>
-    D3F973BDFA1B8D68EE96D8B311587A99
+   8344E688142DF05219853B2D497C749D
 
     获得欢迎页
     <string name="net_helloworld_list">/helloworld/list</string>

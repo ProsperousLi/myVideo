@@ -19,7 +19,7 @@
     //确定是水平滚动，还是垂直滚动
     UICollectionViewFlowLayout *flowLayout=[[UICollectionViewFlowLayout alloc] init];
     //[flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
-    [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     
     self.collectionView=[[UICollectionView alloc] initWithFrame:CGRectMake(0,  ScreenHeight/6, ScreenWidth, ScreenHeight * 3) collectionViewLayout:flowLayout];
     self.collectionView.dataSource=self;
@@ -30,13 +30,14 @@
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
     [self.view addSubview:self.verticalScrollView];
     [_verticalScrollView addSubview:self.collectionView];
+    [self.view addSubview:self.searchBar];
 }
 
 
 -(UIScrollView *)verticalScrollView {
     if (!_verticalScrollView) {
         //verticalScrollView 垂直试图滚动
-        _verticalScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
+        _verticalScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, ScreenHeight/10, ScreenWidth, ScreenHeight)];
         [_verticalScrollView setDelegate:self];
         _verticalScrollView.contentSize = CGSizeMake(ScreenWidth , ScreenHeight * 3);
         _verticalScrollView.backgroundColor = [UIColor whiteColor];
@@ -45,6 +46,18 @@
     }
     
     return _verticalScrollView;
+}
+
+-(UISearchBar*)searchBar {
+    if (!_searchBar) {
+        _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight/10)];
+       // [[_searchBar.subviews objectAtIndex:0] setHidden:YES];  //隐藏搜索框
+        //_searchBar.prompt = @"电影、电视剧";
+        _searchBar.placeholder = @"热门搜索:师父";
+        //_searchBar.showsCancelButton =YES;
+
+    }
+    return _searchBar;
 }
 
 #pragma mark -- UICollectionViewDataSource
@@ -124,6 +137,11 @@
 -(BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     return YES;
+}
+
+//搜索框的取消按钮的回调
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    //[self.searchDisplayController setActive:NO animated:YES];
 }
 
 @end

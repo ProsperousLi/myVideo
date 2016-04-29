@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ContentCollectionView : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+@interface ContentCollectionView : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,UISearchBarDelegate>
 
 @property (strong,nonatomic) UIScrollView *verticalScrollView; //竖直滚动
 @property (strong,nonatomic) UICollectionView *collectionView;
+@property (strong,nonatomic) UISearchBar *searchBar;
 
 @end

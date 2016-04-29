@@ -66,7 +66,7 @@
     NSURL *url = [NSURL URLWithString:LOGINURL];
     NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:url];   //声明http请求
     [request setHTTPMethod:@"POST"];//POST请求
-    [request setTimeoutInterval:4.0]; // 超时时间
+    [request setTimeoutInterval:1.0]; // 超时时间
     NSMutableString *content = postStr;//发送内容
     NSData *data = [content dataUsingEncoding:NSUTF8StringEncoding];
     [request setHTTPBody:data];//发送

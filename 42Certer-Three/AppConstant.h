@@ -18,27 +18,56 @@
 #define ScreenHeight [[UIScreen mainScreen] bounds].size.height
 
 
-#pragma mark - 颜色配置
-#define main_background_color 0xF7F7F7
-#define main_background_normal_color 0xFFFFFF
-#define main_background_key_color 0xF1EFF0
-#define main_background_color_weigth 0xD1CFD0
-#define main_background_color_warning 0xFFFFCC
-#define main_bottom_background_color 0xECEAEB
-#define main_drawer_background_color 0xE3DDDD  //透明度：alpha 0.899    筛选框
-#define main_text_key_word_color 0xD45D63  //按钮字体红色
-#define main_text_title_color 0x575354      //标题颜色
-#define main_text_subtitle_color 0x949293
-#define main_text_normal_color 0xFFFFFF
-#define main_text_hint_color 0x0000FF
-#define main_text_player 0xD45D63   //alpha 0.8
-#define main_mask_color 0x424242  //alpha 0.67
-#define main_mask_lighter_color 0x000000 //alpha 0.6
-#define main_button_background_color 0xD45D63
-#define main_selector_selected_color 0x666666  //alpha 0.4
-#define main_head_background_color 0xD45D63             //登录按钮
-#define main_mediacontroller_bg 0x000000  //alpha 0.6
-#define main_loading_line 0xD45D63
+#pragma mark - 颜色配置    需要使用扩展的color方法将16进制转化成rgb a格式
+#define primary_color_0 0xF7F7F7
+#define primary_color_50 0xF1EFF0
+#define primary_color_50_mask 0xF1EFF0  //alpha 0.6
+#define primary_color_100 0xF3C1C3
+#define primary_color_200 0xF0ABAE
+#define primary_color_300 0xED9498
+#define primary_color_400 0xED797E
+#define primary_color_500 0xEB5E64
+#define primary_color_500_mask 0xEB5E64  //alpha 0.95
+#define primary_color_600 0xEB4A51
+#define primary_color_700 0xDB3A41
+#define primary_color_800 0xC3292F
+#define primary_color_900 0xAA1D22
+
+#define primary_color_grey_50 0xFAFAFA
+#define primary_color_grey_100 0xF5F5F5
+#define primary_color_grey_200 0xEEEEEE
+#define primary_color_grey_300 0xE0E0E0
+#define primary_color_grey_400 0xBDBDBD
+#define primary_color_grey_500 0x9E9E9E
+#define primary_color_grey_600 0x757575
+#define primary_color_grey_700 0x616161
+#define primary_color_grey_800 0x424242
+#define primary_color_grey_900 0x212121
+#define primary_color_grey_1000 0x000000
+
+#define primary_color_orange_100 0xFFD5B5
+#define primary_color_orange_300 0xFFBD8A
+#define primary_color_orange_500 0xEF9E60
+#define primary_color_orange_700 0xD37C3A
+#define primary_color_orange_900 0xAD5B1C
+
+#define main_text_title_color_dark 0x000000
+#define main_text_title_color_light 0x8F8C8C
+#define main_text_title_color_lighter 0xBDBDBD
+#define main_text_title_color 0x585151
+
+#define layout_main_tab_background 0xECEAEB
+#define layout_channel_content_drawer_background 0xE3DDDD  //alpha 0.6
+
+#define app_msg_background 0xFFFFCC
+
+#define main_mask_lighter 0x000000  //alpha 0.0
+#define main_mask_light 0x000000 //alpha 0.26
+#define main_mask 0x000000 //alpha 0.6
+
+
+
+
 
 #pragma mark 登录界面
 #define deLoginTextInfo @"请输入账号"
@@ -112,6 +141,25 @@
 
 #pragma mark 按钮的自定义内容 cellPageNumber  cellview的高度是一个屏幕的高度
 #define cellPageNumber 7
+
+
+#pragma mark -接口  net_host + ***
+#define Net_host  @"http://172.24.4.44/mrs"
+//分级
+#define net_video_level_0 @"/video/level/0"
+#define net_video_level_1 @"/video/level/1"
+#define net_video_level_2 @"/video/level/2"
+//置顶视频
+#define net_video_multi_top @"/video/multi/top/6/list"
+//排序
+//#define net_video_multis   ///video/multi/type/?/content/?/region/?/latest/?/hot/?/score/?/page_index/?/page_size/?
+//欢迎页
+#define net_helloworld_list @"/helloworld/list"
+//软件信息
+#define net_html_team_info @"/html/team_info.html"
+#define net_html_software @"/html/software.html"
+#define net_html_nav @"/html/nav.html"
+
 #endif /* AppConstant_h */
 
 

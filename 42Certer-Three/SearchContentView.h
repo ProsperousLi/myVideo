@@ -10,4 +10,6 @@
 
 @interface SearchContentView : UIView
 
+
+@property(nonatomic,strong) UISearchBar *searchBar;
 @end

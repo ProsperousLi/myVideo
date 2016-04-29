@@ -34,10 +34,8 @@ static int TapBarindex = 0;
 
     [self.view addSubview:self.NavigationBar];
     // Do any additional setup after loading the view.
+    [self playVideo:@"123"];
 
-
-    
-    [self playVideo];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -96,9 +94,10 @@ static int TapBarindex = 0;
 }
 
 
-- (void)playVideo{
-    NSURL *url = [NSURL URLWithString:@"http://120.27.45.44/mrs/upload/video/mp4/1460608855770.mp4"];
+- (void)playVideo:(NSString*)sting {
+    NSURL *url = [NSURL URLWithString:@"http://172.24.4.44/mrs/upload/video/mp4/1461299512698.mp4"];
     //NSURL *url = [NSURL URLWithString:@"http://krtv.qiniudn.com/150522nextapp"];
+    //NSURL *url = [NSURL URLWithString:sting];
     [self addVideoPlayerWithURL:url];
 }
 

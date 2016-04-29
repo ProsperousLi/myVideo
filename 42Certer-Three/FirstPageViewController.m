@@ -17,9 +17,9 @@
     [pageView.moreView addSubview:self.tableView];
     [self customButtonsAddWithDelete:nil showNumberButtonsInOneLine:PageNumber];
     [self.view addSubview:pageView];
-    pageView.carouselView.imageClickBlock = ^(NSInteger index) {
-        [self ImageViewSingleTapAction:index];
-    };
+//    pageView.carouselView.imageClickBlock = ^(NSInteger index) {
+//        [self ImageViewSingleTapAction:index];
+//    };
     
     
 }
@@ -35,7 +35,7 @@
     [self setValuesForCustomButtons]; //调用方法，初始化button的内容
     //众多按钮的透明背景
     _BUttonbackgroudView = [[UIView alloc] initWithFrame:CGRectMake(0, ScreenHeight/2, ScreenWidth, ScreenHeight/3 - (ScreenHeight/11) * 2 + ScreenHeight/15)];
-    _BUttonbackgroudView.backgroundColor = [UIColor colorWithHex:main_background_key_color alpha:0.8];
+    _BUttonbackgroudView.backgroundColor = [UIColor colorWithHex:primary_color_grey_50 alpha:1.0];
     [pageView.verticalScrollView addSubview:_BUttonbackgroudView];
     
     for (int i = 1; i <= _customButtonContents.count; i++) { //按钮布局
@@ -59,7 +59,7 @@
         }
         
         customButton.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.0];
-        [customButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [customButton setTitleColor:[UIColor colorWithHex:main_text_title_color_light] forState:UIControlStateNormal];
         [customButton setTitle:[_customButtonContents objectAtIndex:(i-1)] forState:UIControlStateNormal];
         customButton.tag = i;
         [customButton addTarget:self action:@selector(custombuttonAction:) forControlEvents:UIControlEventTouchUpInside];
@@ -109,15 +109,17 @@
 }
 
 
-#pragma mark 小的tableview
--(UITableView *)tableView {
+//#pragma mark 小的tableview
+//-(UITableView *)tableView {
 //    if (!_tableView) {
 //        _tableView = [[UITableView alloc] initWithFrame:pageView.moreView.bounds style:UITableViewStyleGrouped];
 //        _tableView.dataSource = self;
 //    }
 //    
-    return _tableView;
-}
+//    return _tableView;
+//}
+
+
 
 
 

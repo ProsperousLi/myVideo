@@ -301,21 +301,21 @@ static const CGFloat kVideoPlayerControllerAnimationTimeinterval = 0.3f;
 //电池栏在右全屏
 - (void)setDeviceOrientationLandscapeLeft{
     
-    //    if  (self.integer==1){
-    //        self.originFrame = self.view.frame;
-    //        CGFloat height = [[UIScreen mainScreen] bounds].size.width;
-    //        CGFloat width = [[UIScreen mainScreen] bounds].size.height;
-    //        CGRect frame = CGRectMake((height - width) / 2, (width - height) / 2, width, height);;
-    //        [UIView animateWithDuration:0.3f animations:^{
-    //            self.frame = frame;
-    //            [self.view setTransform:CGAffineTransformMakeRotation(-M_PI)];
-    //        } completion:^(BOOL finished) {
-    //            self.integer = 2;
-    //            self.isFullscreenMode = YES;
-    //            self.videoControl.fullScreenButton.hidden = YES;
-    //            self.videoControl.shrinkScreenButton.hidden = NO;
-    //        }];
-    //    }
+//        if  (self.integer==1){
+//            self.originFrame = self.view.frame;
+//            CGFloat height = [[UIScreen mainScreen] bounds].size.width;
+//            CGFloat width = [[UIScreen mainScreen] bounds].size.height;
+//            CGRect frame = CGRectMake((height - width) / 2, (width - height) / 2, width, height);;
+//            [UIView animateWithDuration:0.3f animations:^{
+//                self.frame = frame;
+//                [self.view setTransform:CGAffineTransformMakeRotation(-M_PI)];
+//            } completion:^(BOOL finished) {
+//                self.integer = 2;
+//                self.isFullscreenMode = YES;
+//                self.videoControl.fullScreenButton.hidden = YES;
+//                self.videoControl.shrinkScreenButton.hidden = NO;
+//            }];
+//        }
     if (self.isFullscreenMode) {
         return;
     }
@@ -428,27 +428,27 @@ static const CGFloat kVideoPlayerControllerAnimationTimeinterval = 0.3f;
     [self.videoControl layoutIfNeeded];
 }
 
-#pragma mark - 取出视频图片
-+ (UIImage*) thumbnailImageForVideo:(NSURL *)videoURL atTime:(NSTimeInterval)time
-{
-    AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:videoURL options:nil];
-    NSParameterAssert(asset);
-    AVAssetImageGenerator *assetImageGenerator = [[AVAssetImageGenerator alloc] initWithAsset:asset];
-    assetImageGenerator.appliesPreferredTrackTransform = YES;
-    assetImageGenerator.apertureMode = AVAssetImageGeneratorApertureModeEncodedPixels;
-    
-    CGImageRef thumbnailImageRef = NULL;
-    CFTimeInterval thumbnailImageTime = time;
-    NSError *thumbnailImageGenerationError = nil;
-    thumbnailImageRef = [assetImageGenerator copyCGImageAtTime:CMTimeMake(thumbnailImageTime, 60) actualTime:NULL error:&thumbnailImageGenerationError];
-    
-    if (!thumbnailImageRef)
-        NSLog(@"thumbnailImageGenerationError %@", thumbnailImageGenerationError);
-    
-    UIImage *thumbnailImage = thumbnailImageRef ? [[UIImage alloc] initWithCGImage:thumbnailImageRef] : nil;
-    
-    return thumbnailImage;
-}
+//#pragma mark - 取出视频图片
+//+ (UIImage*) thumbnailImageForVideo:(NSURL *)videoURL atTime:(NSTimeInterval)time
+//{
+//    AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:videoURL options:nil];
+//    NSParameterAssert(asset);
+//    AVAssetImageGenerator *assetImageGenerator = [[AVAssetImageGenerator alloc] initWithAsset:asset];
+//    assetImageGenerator.appliesPreferredTrackTransform = YES;
+//    assetImageGenerator.apertureMode = AVAssetImageGeneratorApertureModeEncodedPixels;
+//    
+//    CGImageRef thumbnailImageRef = NULL;
+//    CFTimeInterval thumbnailImageTime = time;
+//    NSError *thumbnailImageGenerationError = nil;
+//    thumbnailImageRef = [assetImageGenerator copyCGImageAtTime:CMTimeMake(thumbnailImageTime, 60) actualTime:NULL error:&thumbnailImageGenerationError];
+//    
+//    if (!thumbnailImageRef)
+//        NSLog(@"thumbnailImageGenerationError %@", thumbnailImageGenerationError);
+//    
+//    UIImage *thumbnailImage = thumbnailImageRef ? [[UIImage alloc] initWithCGImage:thumbnailImageRef] : nil;
+//    
+//    return thumbnailImage;
+//}
 
 
 @end
