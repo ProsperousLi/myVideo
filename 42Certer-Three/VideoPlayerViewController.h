@@ -8,18 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import "AppConstant.h"
-#import "FirstPageViewController.h"
 #import "MyCATransition.h"
 #import "KrVideoPlayerController.h"
 #include "LeftSlideViewController.h"
 #include <ViewDeck/ViewDeck.h>
-
+#import "VideoPlayerView.h"
 
 @interface VideoPlayerViewController : UIViewController{
     KrVideoPlayerController * krVideoPlayerController;
-    
+    NSMutableArray *VideoButtonCountArray;
+    NSInteger PictureIndex;
+    NSMutableArray *videoPathArray;
+    NSInteger tagIndex;
 }
                                                         
+
 
 @property(retain,nonatomic) UINavigationBar *NavigationBar;
 
@@ -28,5 +31,16 @@
 @property (nonatomic,strong) LeftSlideViewController * leftSlideViewController ; //左边视图
 
 @property (nonatomic,strong) IIViewDeckController *deckController;
+
+@property (nonatomic,strong) VideoPlayerView *videoPlayerView;
+
+@property (strong,nonatomic) UIViewController *videoPlayController; //绑定视频播放器页面id的声明
+
+-(void)setPictureIndex:(NSInteger) index;
+
+-(NSInteger)getPictureIndex;
+
+-(void)InitVideoPlayerView;
+
 
 @end

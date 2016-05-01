@@ -16,6 +16,5 @@
 @property (nonatomic,strong) NSMutableArray *TopArray;
 -(NSMutableArray *) getJsonData:(NSMutableArray *)json;
 
-//-(void)jsonTopInit;
 
 @end

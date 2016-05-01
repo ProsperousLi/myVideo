@@ -41,6 +41,7 @@
     根据剧集里面的文件ID拿播放地址
 	<string name="net_video_parts_file">/video/file/http/id/</string>
    8344E688142DF05219853B2D497C749D
+http://172.24.4.44/mrs/video/file/http/id/
 
     获得欢迎页
     <string name="net_helloworld_list">/helloworld/list</string>

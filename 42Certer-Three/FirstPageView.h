@@ -12,9 +12,12 @@
 #import "XRCarouselView.h"
 #import "UIColor+Hex.h"
 #import "FirstpageAllData.h"
+#import "VideoPlayerViewController.h"
 
 @interface FirstPageView : UIView <XRCarouselViewDelegate,UIScrollViewDelegate,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
-
+{
+    NSInteger PictureIndex;
+}
 
 @property (nonatomic, strong) XRCarouselView *carouselView;
 @property (nonatomic,strong) FirstpageAllData *FirstPageData;
@@ -30,5 +33,7 @@
 @property (nonatomic,strong) NSMutableArray *TopPicturedata;
 @property (nonatomic,strong) NSMutableArray *TopNameData;
 @property (nonatomic,strong) NSMutableArray *TopVideoAddr;
+
+
 
 @end

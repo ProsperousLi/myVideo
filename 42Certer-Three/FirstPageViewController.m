@@ -70,20 +70,21 @@
 
 #pragma view跳转
 -(void)custombuttonAction:(UIButton*)button {
+
     
-        _customButtonContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:SearchContentViewControllerID];
-        for (int i =1 ; i <= _customButtonContents.count; i++) {
-            if (button.tag == i) {
-                NSString * strContent = [NSString stringWithFormat:@"%@",[_customButtonContents objectAtIndex:(i-1)]];
-                [super getStrForLabel:strContent];
-            }
+    _customButtonContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:SearchContentViewControllerID];
+    for (int i =1 ; i <= _customButtonContents.count; i++) {
+        if (button.tag == i) {
+            NSString * strContent = [NSString stringWithFormat:@"%@",[_customButtonContents objectAtIndex:(i-1)]];
+            [super getStrForLabel:strContent];
         }
+    }
     
     
-        MyCATransition *transition = [[MyCATransition alloc] init];
-        [transition transition:4 withView:self.view andToOtherControllerType:2];
-        //_customButtonContentViewController.modalPresentationStyle = UIModalTransitionStyleCrossDissolve;
-        [self presentViewController:_customButtonContentViewController animated:NO completion:nil];
+    MyCATransition *transition = [[MyCATransition alloc] init];
+    [transition transition:4 withView:self.view andToOtherControllerType:2];
+    //_customButtonContentViewController.modalPresentationStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:_customButtonContentViewController animated:NO completion:nil];
     
     
 }

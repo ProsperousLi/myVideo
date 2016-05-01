@@ -84,21 +84,27 @@
     self.carouselView.frame = CGRectMake(0, ScreenHeight/8, ScreenWidth, ScreenWidth/16*9);
     
     //用block处理图片点击
-        self.carouselView.imageClickBlock = ^(NSInteger index) {
-            NSLog(@"第%ld张图片被点击", index);
-            _videoPlayController= [[self MyviewController].storyboard instantiateViewControllerWithIdentifier:VideoPlayViewControllerID];
-//            UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-//            UIViewController *myViewController = [story instantiateViewControllerWithIdentifier:VideoPlayViewControllerID];
-            MyCATransition *transition = [[MyCATransition alloc] init];
-            [transition transition:7 withView:[self MyviewController].view andToOtherControllerType:0];
-            [[self MyviewController] presentViewController:_videoPlayController animated:NO completion:nil];
-            
-            
-            
-        };
+//        self.carouselView.imageClickBlock = ^(NSInteger index) {
+//            NSLog(@"第%ld张图片被点击", index);
+//            _videoPlayController= [[self MyviewController].storyboard instantiateViewControllerWithIdentifier:VideoPlayViewControllerID];
+////            UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+////            UIViewController *myViewController = [story instantiateViewControllerWithIdentifier:VideoPlayViewControllerID];
+//           
+//            
+//            
+//            MyCATransition *transition = [[MyCATransition alloc] init];
+//            [transition transition:7 withView:[self MyviewController].view andToOtherControllerType:0];
+//            [[self MyviewController] presentViewController:_videoPlayController animated:NO completion:nil];
+//            
+//            
+//            
+//        };
+
     
     //用代理处理图片点击，如果两个都实现，block优先级高于代理
     self.carouselView.delegate = self;
+    
+    
     
     
     //设置每张图片的停留时间
@@ -138,6 +144,32 @@
 }
 
 
+//代理方法，可以处理图片的点击事件
+- (void)carouselView:(XRCarouselView *)carouselView didClickImage:(NSInteger)index {
+    //NSLog(@"第%ld张图片被点击", index);
+    PictureIndex = index;
+    _videoPlayController = [[UIViewController alloc] init];
+    _videoPlayController.view = [[UIView alloc] init];
+    _videoPlayController= [[self MyviewController].storyboard instantiateViewControllerWithIdentifier:VideoPlayViewControllerID];
+    //            UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    //            UIViewController *myViewController = [story instantiateViewControllerWithIdentifier:VideoPlayViewControllerID];
+    
+    
+    
+    MyCATransition *transition = [[MyCATransition alloc] init];
+    [transition transition:7 withView:[self MyviewController].view andToOtherControllerType:0];
+    [[self MyviewController] presentViewController:_videoPlayController animated:NO completion:nil];
+    
+//    VideoPlayerViewController *playerView = [[VideoPlayerViewController alloc] init];
+//    [playerView setPictureIndex:index];
+    
+    //[[NSUserDefaults standardUserDefaults] setInteger:index forKey:@"picIndex"];
+    NSDictionary * dic  = [NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"%ld",(long)index] forKey:@"pictureIndex"];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"picture" object:self userInfo:dic];
+
+
+}
 
 
 
@@ -270,15 +302,15 @@
         [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse *returnResponse,NSData *data,NSError *error){
             //NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*)returnResponse;
             if (error || data == nil){
-                NSLog(@"请求失败");
+                //NSLog(@"请求失败");
             }
             else{
-                NSLog(@"请求成功");
+                //NSLog(@"请求成功");
                 NSMutableDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
                 NSMutableArray *jsonArray = [dic valueForKeyPath:@"object.videoMulti.preview"];   //图片,路径得到
                 NSMutableArray *nameArray = [dic valueForKeyPath:@"object.videoMulti.name"];//就是字符串不是http图片
                 NSMutableArray *videoArray = [dic valueForKeyPath:@"object.videoMulti.id"];
-                NSLog(@"videoArray : %@",videoArray);
+                //NSLog(@"videoArray : %@",videoArray);
                 _TopNameData = nameArray;
                 _TopPicturedata = [self getPictureJsonData:jsonArray];
                 [self picturesTurn];

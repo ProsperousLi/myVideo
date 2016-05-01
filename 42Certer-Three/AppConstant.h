@@ -153,6 +153,16 @@
 #define net_video_multi_top @"/video/multi/top/6/list"
 //排序
 //#define net_video_multis   ///video/multi/type/?/content/?/region/?/latest/?/hot/?/score/?/page_index/?/page_size/?
+
+//根据视频的ID拿到剧集列表
+#define net_video_parts @"/video/part/multi/id/" //+ 具体的id
+//根据剧集里面的文件ID拿播放地址
+#define net_video_parts_file @"/video/file/http/id/"
+
+
+//搜索关键字
+//#define net_video_search @"/video/multi/search/?/page_index/0/page_size/10"
+
 //欢迎页
 #define net_helloworld_list @"/helloworld/list"
 //软件信息
