@@ -11,7 +11,6 @@
 		69BAEEC61C98F07100B0E091 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69BAEEC51C98F07100B0E091 /* MediaPlayer.framework */; };
 		69BAEEC81C98F07B00B0E091 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69BAEEC71C98F07B00B0E091 /* AVFoundation.framework */; };
 		69BAEECD1C98F3CD00B0E091 /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BAEECC1C98F3CD00B0E091 /* VideoPlayerViewController.m */; };
-		69BAEED31C99027600B0E091 /* VideoPlayeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BAEED21C99027600B0E091 /* VideoPlayeView.m */; };
 		D819537E1CB8EAD500373E83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D819537D1CB8EAD500373E83 /* Main.storyboard */; };
 		D8368AA81C14298100C4E399 /* SearchContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8368AA71C14298100C4E399 /* SearchContentViewController.m */; };
 		D8368AAB1C142B1700C4E399 /* SearchContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8368AAA1C142B1700C4E399 /* SearchContentView.m */; };
@@ -28,8 +27,6 @@
 		D87160E41C0AF4A400AF0BEA /* MyCATransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D87160E31C0AF4A400AF0BEA /* MyCATransition.m */; };
 		D87160F11C0AF76D00AF0BEA /* NetOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D87160F01C0AF76D00AF0BEA /* NetOperation.m */; };
 		D878DAE01CCFE77800ABEEE5 /* color.xml in Resources */ = {isa = PBXBuildFile; fileRef = D878DADF1CCFE77800ABEEE5 /* color.xml */; };
-		D878DAE31CCFF74A00ABEEE5 /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = D878DAE21CCFF74A00ABEEE5 /* VideoView.m */; };
-		D878DAE61CCFF78300ABEEE5 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D878DAE51CCFF78300ABEEE5 /* VideoViewController.m */; };
 		D87A6B0A1CB3EA52005E9A6C /* NormalMore.png in Resources */ = {isa = PBXBuildFile; fileRef = D87A6B081CB3EA52005E9A6C /* NormalMore.png */; };
 		D87A6B0B1CB3EA52005E9A6C /* NormalMore.png in Resources */ = {isa = PBXBuildFile; fileRef = D87A6B081CB3EA52005E9A6C /* NormalMore.png */; };
 		D87A6B0C1CB3EA52005E9A6C /* NormalMore.png in Resources */ = {isa = PBXBuildFile; fileRef = D87A6B081CB3EA52005E9A6C /* NormalMore.png */; };
@@ -108,8 +105,6 @@
 		69BAEEC71C98F07B00B0E091 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		69BAEECB1C98F3CD00B0E091 /* VideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerViewController.h; sourceTree = "<group>"; };
 		69BAEECC1C98F3CD00B0E091 /* VideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerViewController.m; sourceTree = "<group>"; };
-		69BAEED11C99027600B0E091 /* VideoPlayeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayeView.h; sourceTree = "<group>"; };
-		69BAEED21C99027600B0E091 /* VideoPlayeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayeView.m; sourceTree = "<group>"; };
 		D819537D1CB8EAD500373E83 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D8368AA61C14298100C4E399 /* SearchContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchContentViewController.h; sourceTree = "<group>"; };
 		D8368AA71C14298100C4E399 /* SearchContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchContentViewController.m; sourceTree = "<group>"; };
@@ -135,10 +130,6 @@
 		D87160EF1C0AF76D00AF0BEA /* NetOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetOperation.h; sourceTree = "<group>"; };
 		D87160F01C0AF76D00AF0BEA /* NetOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetOperation.m; sourceTree = "<group>"; };
 		D878DADF1CCFE77800ABEEE5 /* color.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = color.xml; sourceTree = "<group>"; };
-		D878DAE11CCFF74A00ABEEE5 /* VideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoView.h; sourceTree = "<group>"; };
-		D878DAE21CCFF74A00ABEEE5 /* VideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoView.m; sourceTree = "<group>"; };
-		D878DAE41CCFF78300ABEEE5 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
-		D878DAE51CCFF78300ABEEE5 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		D87A6B081CB3EA52005E9A6C /* NormalMore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NormalMore.png; sourceTree = "<group>"; };
 		D87A6B091CB3EA52005E9A6C /* SelectMore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SelectMore.png; sourceTree = "<group>"; };
 		D87EA11B1C1412CC00FBE2F5 /* FirstPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstPageView.m; sourceTree = "<group>"; };
@@ -293,8 +284,6 @@
 			children = (
 				69BAEECB1C98F3CD00B0E091 /* VideoPlayerViewController.h */,
 				69BAEECC1C98F3CD00B0E091 /* VideoPlayerViewController.m */,
-				D878DAE41CCFF78300ABEEE5 /* VideoViewController.h */,
-				D878DAE51CCFF78300ABEEE5 /* VideoViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -302,10 +291,6 @@
 		69BAEED01C99024800B0E091 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				69BAEED11C99027600B0E091 /* VideoPlayeView.h */,
-				69BAEED21C99027600B0E091 /* VideoPlayeView.m */,
-				D878DAE11CCFF74A00ABEEE5 /* VideoView.h */,
-				D878DAE21CCFF74A00ABEEE5 /* VideoView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -947,17 +932,14 @@
 				D87EA11F1C141E3000FBE2F5 /* FirstPageViewController.m in Sources */,
 				D87160DC1C0AF3B700AF0BEA /* LoginViewController.m in Sources */,
 				D87EA11C1C1412CC00FBE2F5 /* FirstPageView.m in Sources */,
-				69BAEED31C99027600B0E091 /* VideoPlayeView.m in Sources */,
 				D8841D911C12D9460093C264 /* WelcomePageData.m in Sources */,
 				D8841D841C12C79E0093C264 /* ImageViewController.m in Sources */,
-				D878DAE31CCFF74A00ABEEE5 /* VideoView.m in Sources */,
 				D8846A0F1C9AA62A008234E8 /* KrVideoPlayerControlView.m in Sources */,
 				D8368AAB1C142B1700C4E399 /* SearchContentView.m in Sources */,
 				D8E6F5411CB9F615004F9AF1 /* SlideLeftAndRightInit.m in Sources */,
 				D8846A101C9AA62A008234E8 /* READEME.md in Sources */,
 				D8B2449F1C118ADD00858071 /* ActivityView.m in Sources */,
 				D8B690BC1C0AD21200CD3A2C /* ViewController.m in Sources */,
-				D878DAE61CCFF78300ABEEE5 /* VideoViewController.m in Sources */,
 				69BAEECD1C98F3CD00B0E091 /* VideoPlayerViewController.m in Sources */,
 				D864F7841CC3932D009F9D67 /* XRCarouselView.m in Sources */,
 				D87160DF1C0AF3D800AF0BEA /* LoginView.m in Sources */,

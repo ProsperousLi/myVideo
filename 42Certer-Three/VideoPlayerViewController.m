@@ -103,8 +103,8 @@ static int TapBarindex = 0;
 
 - (void)addVideoPlayerWithURL:(NSURL *)url{
     if (!self.videoController) {
-        CGFloat width = [UIScreen mainScreen].bounds.size.width;
-        self.videoController = [[KrVideoPlayerController alloc] initWithFrame:CGRectMake(0, 64, width, width*(9.0/16.0))];
+        //CGFloat width = [UIScreen mainScreen].bounds.size.width;
+        self.videoController = [[KrVideoPlayerController alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, ScreenWidth*(9.0/16.0))];
         __weak typeof(self)weakSelf = self;
         [self.videoController setDimissCompleteBlock:^{
             weakSelf.videoController = nil;
@@ -131,6 +131,7 @@ static int TapBarindex = 0;
                 
             }
         }];
+        
         [self.view addSubview:self.videoController.view];
     }
     self.videoController.contentURL = url;
